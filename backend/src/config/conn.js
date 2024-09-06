@@ -1,8 +1,9 @@
-import {Sequelize}  from "sequelize"
+import { Sequelize } from "sequelize";
 
-const conn = new Sequelize("EchoBlog","root","Sen@iDev77!.,",{
-    host: "localhost",
-    dialect: "mysql"
-})
+const conn = new Sequelize("EchoBlog", "root", "Sen@iDev77!.", {
+  host: "localhost",
+  dialect: "mysql",
+});
 
-export default conn 
+
+export default conn;
