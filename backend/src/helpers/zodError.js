@@ -1,15 +1,15 @@
 const formatZodError = (error) => {
-  const erroFormatado = {};
+    const erroFormatado = {};
 
-  error.errors.forEach((err) => {
-      const path = err.path[0];
-      if (!erroFormatado[path]) {
-          erroFormatado[path] = [];
-      }
-      erroFormatado[path].push(err.message);
-  });
+    error.errors.forEach((err) => {
+        const path = err.path[0];
+        if (!erroFormatado[path]) {
+            erroFormatado[path] = [];
+        }
+        erroFormatado[path].push(err.message);
+    });
 
-  return erroFormatado;
+    return erroFormatado;
 };
 
 export default formatZodError;
